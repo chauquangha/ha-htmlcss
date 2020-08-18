@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #0a223d;
+    --background-color: #f5fafe;
+    --white-color: #ffffff;
+    --text-color: #333333;
+    --black-color: #000;
+}
+
+/* * {
+    box-sizing: inherit;
+} */
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Mulish', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1110px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+.grid__full-width {
+    width: 100%;
+}

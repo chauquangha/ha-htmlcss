@@ -1,0 +1,267 @@
+/* navbar top */
+.navbar-top {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: var(--background-color);
+}
+
+.navbar-top-contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.0rem;
+    color: var(--text-color);
+}
+
+.navbar-top__help {
+    display: block;
+}
+
+.navbar-top__notify {
+    display: flex;
+    align-items: center;
+} 
+
+.navbar-top__gift-card {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.navbar-top__gift-card--icon {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-top__gift-card-title {
+    margin-left: 10px;
+}
+
+.navbar-top__programs {
+    display: flex;
+}
+
+.navbar-top__programs-icon {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-top__programs-title {
+    margin-left: 10px;
+}
+
+ /* navbar */
+.navbar {
+    background-color: var(--white-color);
+    height: 120px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+ .navbar_container {
+     display: flex;
+     justify-content: space-between; 
+     align-items: center;
+}
+
+.navbar__search {
+    position: relative;
+    right: 108px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color);
+    width: 350px;
+    height: 40px;
+    margin-left: 108px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.navbar__search-text {
+    margin-left: 23px;
+}
+
+.navbar__search-icon {
+    width: 65px;
+    height: 40px;
+    background-color: #ec1f46;
+    border-top-right-radius: 6px;   
+    border-bottom-right-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar__cart {
+    position: relative;
+    display: flex;
+}
+
+.navbar__cart-icon {
+
+}
+
+.navbar__cart-numbers {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+.navbar__cart-numbers-num { 
+    position: absolute;
+    z-index: 111;
+    color: var(--white-color);
+}
+
+ .navbar__profile {
+     display: flex;
+     align-items: center;
+     font-size: 1.4rem;
+     line-height: 1.8rem;
+    
+ }
+
+.navbar__profile-img {
+    margin-right: 18px;
+}
+
+
+.navbar__profile-name {
+    line-height: 0;
+    margin-right: 24px;
+}
+
+.navbar__profile-icon  {
+    margin-left: 0;
+}
+
+/* NAVBAR BOTTOM */
+.navbar-bottom {
+    background-color: var(--primary-color);
+    /* height: 80px; */
+}
+
+.navbar-bottom__lists {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    margin: 0;
+}
+
+.navbar-bottom__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    height: 80px;
+}
+
+.navbar-bottom__item:hover {
+    background: #ec1f46;
+    cursor: pointer;
+}
+
+/* bread-crumb */
+
+.bread-crumb {
+    background-color: var(--background-color);
+    font-size: 1.0rem;
+}
+
+.bread-crumb-texts {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+/* hotel-name */
+.hotel-name {
+    height: 100px;
+    background-color: var(--background-color);
+}
+
+.hotel-name-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hotel-name__stars-list {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin: 0;
+
+}
+
+.hotel-name__stars-item {
+    margin-right: 4px;
+}
+
+.hotel-name__name {
+    position: relative;
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.hotel-name__service {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.hotel-name__offer {
+    position: relative;
+    right: 400px;
+    width: 70px;
+    height: 20px;
+    background-color: #ec1f46;
+    border-radius: 3px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hotel-name__ratings {
+    width: 65px;
+    height: 45px;
+    color: var(--white-color);
+    background-color: #ec1f46;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
+.hotel-name__ratings-title {
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+
+.hotel-name__ratings-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.4rem;
+    margin: 0;
+    margin-bottom: 7px;
+    list-style: none;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+.hotel-name__ratings-number:first-child {
+    font-size: 2.0rem;
+}
