@@ -4,11 +4,12 @@
     --white-color: #ffffff;
     --text-color: #333333;
     --black-color: #000;
+    --button-color: #ec1f46;
 }
 
-/* * {
+* {
     box-sizing: inherit;
-} */
+}
 
 html {
     font-size: 62.5%;
@@ -24,6 +25,7 @@ html {
     
 }
 
-.grid__full-width {
-    width: 100%;
+.grid__column-2 { 
+    width: 50%;
 }
+
