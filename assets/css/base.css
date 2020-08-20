@@ -13,8 +13,9 @@
 
 html {
     font-size: 62.5%;
-    line-height: 1.6rem;
-    font-family: 'Mulish', sans-serif;
+    /* line-height: 1.6rem; */
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
 }
 
@@ -29,3 +30,6 @@ html {
     width: 50%;
 }
 
+.grid__column-3 {
+    width: calc(100/3)%;
+}
