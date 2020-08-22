@@ -11,44 +11,38 @@
     align-items: center;
     justify-content: space-between;
     font-size: 1.0rem;
+    line-height: 1.3rem;
     color: var(--text-color);
 }
 
-.navbar-top__help {
-    display: block;
+.navbar-top__help-questions {
+    font-weight: 600;
 }
 
 .navbar-top__notify {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0;
 } 
 
-.navbar-top__gift-card {
+.navbar-top__notifiy-card {
     display: flex;
     align-items: center;
-    margin-right: 100px;
+    margin-right: 0px;
 }
 
-.navbar-top__gift-card--icon {
-    display: flex;
-    align-items: center;
+.navbar-top__notifiy-card-gift {
+    margin-right: 98px;
 }
 
-.navbar-top__gift-card-title {
-    margin-left: 10px;
-}
-
-.navbar-top__programs {
-    display: flex;
-}
-
-.navbar-top__programs-icon {
+.navbar-top__notifiy-card--icon {
     display: flex;
     align-items: center;
 }
 
-.navbar-top__programs-title {
-    margin-left: 10px;
+.navbar-top__notifiy-card--title {
+    margin-left: 20.75px;
 }
 
  /* navbar */
@@ -56,7 +50,6 @@
     background-color: var(--white-color);
     height: 120px;
     display: flex;
-    justify-content: space-between; 
     align-items: center;
 }
 
@@ -66,18 +59,31 @@
      align-items: center;
 }
 
+.navbar_container--item {
+    display: flex;
+    align-items: center;
+}
+
 .navbar__search {
-    position: relative;
-    right: 108px;
     display: flex;
     justify-content: space-between;
     background-color: var(--background-color);
     width: 350px;
     height: 40px;
+    padding: 0;
     margin-left: 108px;
     border-radius: 6px;
     font-size: 1.2rem;
     align-items: center;
+}
+
+.navbar__search-input {
+    height: 100%;
+    padding: 0;
+    padding-left: 23px;
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
 
 .navbar__search-text {
@@ -98,16 +104,21 @@
 .navbar__cart {
     position: relative;
     display: flex;
+    width: 34px;
+    height: 34px;
+    margin-right: 53px;
 }
 
 .navbar__cart-icon {
-
+    position: absolute;
+    left: 0;
+    bottom: 0%;
 }
 
 .navbar__cart-numbers {
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: 0px;
+    right: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,8 +135,7 @@
      display: flex;
      align-items: center;
      font-size: 1.4rem;
-     line-height: 1.8rem;
-    
+     line-height: 100%;
  }
 
 .navbar__profile-img {
@@ -134,34 +144,38 @@
 
 
 .navbar__profile-name {
-    line-height: 0;
+    line-height: 18px;
+    line-height: 100%;
     margin-right: 24px;
 }
 
 .navbar__profile-icon  {
-    margin-left: 0;
+    margin-right: 5px;
 }
 
 /* NAVBAR BOTTOM */
 .navbar-bottom {
     background-color: var(--primary-color);
-    /* height: 80px; */
+    height: 80px;
 }
 
 .navbar-bottom__lists {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
     font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
     color: var(--white-color);
     margin: 0;
-}
+    padding: 0;
+}   
 
 .navbar-bottom__item {
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-width: 100px;
     height: 80px;
 }
 
@@ -264,4 +278,207 @@
 
 .hotel-name__ratings-number:first-child {
     font-size: 2.0rem;
+}
+
+
+
+.main-package {
+    background-color: var(--background-color);
+}
+
+.slider-booking-map {
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+
+.slider-booking-map__slider {
+    width: 728px;
+    height: 450px;
+    border-radius: 8px;
+    background-image: linear-gradient(180deg, rgba(0, 122, 223, 0.6), rgba(255, 255, 255, 0.16)), 
+    url(https://s3-alpha-sig.figma.com/img/2b6d/bbb7/c51053944d88e342b77ef771783c0dd3?Expires=1598832000&Signature=BwDWbNS83BaVzq1E7Cr7QEqnzCI~UaCmprg-HKmU4ChR~9JSA1XZehfpZNDfksxQgPbTsE57hhsBu5WwnygDTBqGd2xc~58-zEzGoIkS8hdtPlmWC81bs1pSc9DlXvvU-kR7VcC-c73qU9onNXE1eix5rL7sCwHRsl-16sr1FnSd73-gQ4BF10VxHtt6JQVlojNZvtr5x67dBLMnF0JH5DdPQ6B-YLpQthd7fYAdoKtuwZY6KfaYwmHk5sBqeliHgHOa1M5nsobo4WrS60TKu6WNVWr1YiWO2r8hdWNjJGLuhjaeWa1qSdTIH69Xc75sATYCEqNreNzdq4sOCCDVRQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}   
+
+.slider-booking-map__booking {
+    width: 350px;
+    height: 210px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+}
+
+.slider-booking-map__map {
+    width: 347px;
+    height: 213px;
+    border-radius: 8px  ;
+    background-image: url(https://s3-alpha-sig.figma.com/img/0e7e/a575/f4abd1966aa856bfc092f3cff8e7e36c?Expires=1598832000&Signature=SvhpGtngX5PdebFuCVmUPN~NCnxtT-zmybHQLE50-n~rK08dQx5uyyp9rc75Ow8q4KqVCITId2KYnnLgOSONA3oZpO-ddhixReccAzpJef1wXp-qbS5F6kXBi~ZgK6uCYkQGel6cT7XMmy30pUNhGPSMdtzGUG~PdDi1O8tEBdpu6eX9uiXk-JWD9-Q1hXPTcqW-TNoAEELMG56cv5N414QddWPLuQEE6TTz2KaAlMOaNJdfdH2UAgcqOa79LJRaUqVw7iOzOTLznZw5bd2jRRAIYn3iFYu~pjojzCwWlh5l4Oy5j0aoDI4LYSgYcfSyj-gGGmWTpibABdy58QI65Q__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cards-menu-lists {
+    width: 100%;
+    height: 35.32px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin-top: 67.68px;
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.cards-menu__items {
+    display: block;
+    position: relative;
+}
+
+.cards-menu__items:hover {
+    cursor: pointer;
+    color: var(--button-color);
+}
+
+.cards-menu__items--active::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--button-color);
+}
+
+
+/* Package summer */
+.package-summer {
+    width: 100%;
+    height: 842px;
+}
+
+.package-summer__name {
+    font-size: 2.4rem;
+    line-height: 3.0rem;
+    margin-top: 40px;
+}
+
+.package-summer-cards {
+    display: flex;
+}
+
+.package-summer__sticky {
+    background-color: var(--white-color);
+    border-radius: 8px 8px 8px 0px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.package-cards-highlight {
+    margin-right: 16px;
+    height: 200px;
+}
+
+.package-summer__title {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    background-color: var(--primary-color);
+}
+
+.package-summer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    /* height: 150 px; */
+}
+
+.package-summer__lists {
+    width: 100%;
+    padding: 0;
+    margin: 27px 35px 27px 25px;
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 0;
+}
+
+.package-cards-offer {
+    margin-left: 16px;
+    height: 200px;
+}
+
+
+
+.package-summer__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+    color: var(--text-color);
+}   
+
+.package-summer__item:last-child {
+    margin-bottom: 0;
+}
+
+.package-summer__item-icon {
+    margin-right: 22.75px;
+}
+
+.package-summer__item-label {
+
+}
+
+.package-summer__details {
+    height: 550px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.package-summer__details--sevices ul {
+    width: 100%;
+    padding: 0;
+    margin: 38px 85px 0 24px;
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 0;
+}
+
+.package-summer__details--others ul {
+    margin-top: 77px;
+}
+
+.package-summer__details--sevices h3 {
+    margin: 0;
+    margin-bottom: 21px;
+    font-size: 1.3rem;
+    color: var(--button-color);
+}
+
+.package-summer__details--sevices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.package-summer__details--line {
+    position: absolute;
+    top: 370px;
+    right: 37px;
+    left: 25px;
+    border-bottom: 1px dashed #E0E0E0;
+    
 }

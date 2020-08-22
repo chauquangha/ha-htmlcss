@@ -4,16 +4,18 @@
     --white-color: #ffffff;
     --text-color: #333333;
     --black-color: #000;
+    --button-color: #ec1f46;
 }
 
-/* * {
+* {
     box-sizing: inherit;
-} */
+}
 
 html {
     font-size: 62.5%;
-    line-height: 1.6rem;
-    font-family: 'Mulish', sans-serif;
+    /* line-height: 1.6rem; */
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
 }
 
@@ -24,6 +26,10 @@ html {
     
 }
 
-.grid__full-width {
-    width: 100%;
+.grid__column-2 { 
+    width: 50%;
+}
+
+.grid__column-3 {
+    width: calc(100/3)%;
 }
