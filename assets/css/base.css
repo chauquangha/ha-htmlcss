@@ -14,7 +14,7 @@
 html {
     font-size: 62.5%;
     /* line-height: 1.6rem; */
-    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Mulish', sans-serif; */
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
 }
@@ -30,6 +30,18 @@ html {
     width: 50%;
 }
 
-.grid__column-3 {
-    width: calc(100/3)%;
+/* button */
+.bth {
+    background-color: #ec1f46;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-size: 12px;
+    line-height: 16px;
+    outline: none;
+    border: 0;
+    padding: 0;
 }

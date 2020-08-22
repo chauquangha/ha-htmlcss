@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -47,7 +47,6 @@
                 </div>
             </div>
         </header>
-        
     
         <!-- navbar -->
         <div class="navbar">
@@ -62,7 +61,7 @@
                         </div> 
                         <div class="navbar__search">
                             <input type="text" class="navbar__search-input" placeholder="Search Location">
-                            <div class="navbar__search-icon">
+                            <div class="bth navbar__search-icon">
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7.33325 2.66668C4.75592 2.66668 2.66659 4.75601 2.66659 7.33334C2.66659 9.91067 4.75592 12 7.33325 12C9.91058 12 11.9999 9.91067 11.9999 7.33334C11.9999 4.75601 9.91058 2.66668 7.33325 2.66668ZM1.33325 7.33334C1.33325 4.01963 4.01954 1.33334 7.33325 1.33334C10.647 1.33334 13.3333 4.01963 13.3333 7.33334C13.3333 10.6471 10.647 13.3333 7.33325 13.3333C4.01954 13.3333 1.33325 10.6471 1.33325 7.33334Z" fill="white"/>
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6286 10.6286C10.889 10.3682 11.3111 10.3682 11.5714 10.6286L14.4714 13.5286C14.7318 13.7889 14.7318 14.211 14.4714 14.4714C14.2111 14.7317 13.789 14.7317 13.5286 14.4714L10.6286 11.5714C10.3683 11.311 10.3683 10.8889 10.6286 10.6286Z" fill="white"/>
@@ -172,16 +171,20 @@
                                         </svg>
                                 </li>
                             </ul>
-                            <h1 class="hotel-name__name">GRAND HILTON HOTEL</h1>
+                            <div class="hotel-name-info-main">
+                                <h1 class="hotel-name__name">GRAND HILTON HOTEL</h1>
+                                <div class="bth hotel-name__offer">Flash Offer</div>
+                            </div>
                             <div class="hotel-name__service">Halft-Board/ All Inclusive + complimentary Activities + Child Stays Free</div>
                         </div>
-                        <div class="hotel-name__offer">Flash Offer</div>
-                        <div class="hotel-name__ratings">
-                            <span class="hotel-name__ratings-title">User Rattings</span>
-                            <ul class="hotel-name__ratings-number">
-                                <li class="hotel-name__ratings-number--present">4.5/</li>
-                                <li class="hotel-name__ratings-number--total">5</li>
-                            </ul>
+                        <div class="bth hotel-name__ratings">
+                            <div class="hotel-name__ratings-content">
+                                <span class="hotel-name__ratings-title">User Rattings</span>
+                                <ul class="hotel-name__ratings-number">
+                                    <li class="hotel-name__ratings-number--present">4.5/</li>
+                                    <li class="hotel-name__ratings-number--total">5</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
     
@@ -191,10 +194,39 @@
             <!-- slider-booking-map -->
             <div class="grid"> 
                 <div class="slider-booking-map">
-                    <div class="slider-booking-map__slider"></div>
-                    <div class="slider-booking-map__booking">
+                    <div class="slider"></div>
+                    <div class="booking-map">
+                        <div class="booking">
+                            <div class="booking-information">
+                                <div class="booking-information__price">
+                                    price starts as     <br>
+                                    <b>$ 8,500</b>      <br>
+                                    per room / night
+                                </div>
+                                <div class="booking-information__person">
+                                    <div>
+                                        <img src="./assets/svg/user.svg" alt="">
+                                        2 x Guests
+                                    </div>
+                                    <div>
+                                        <img src="./assets/svg/home.svg" alt="">
+                                        1 x Room
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="booking-call">
+                                <div>Quick Booking</div>
+                                <span>
+                                    <img src="./assets/svg/phone-call.svg" alt="">
+                                    12100
+                                </span>
+                            </div>
+                            <button class="bth booking-button">View Other Options</button>
+                        </div>
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61349.621264880334!2d108.17168657577378!3d16.0472483944384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219c792252a13%3A0xfc14e3a044436487!2zxJDDoCBO4bq1bmcsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZywgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1598010882661!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
                     </div>
-                    <div class="slider-booking-map__map" ></div>
                 </div>
             </div>
 
@@ -214,7 +246,7 @@
             <!-- package summer -->
             <div class="grid">
                 <div class="package-summer">
-                    <h2 class="package-summer__name">PACKAGE SUMMERRY</h2>
+                    <h2 class="package-summer__name">PACKAGE SUMMERY</h2>
                     <div class="package-summer-cards">
                         <!-- Package Highlights -->
                         <div class="grid__column-2">
@@ -241,7 +273,7 @@
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
                                                         </svg>
                                                 </span>
-                                                <span class="package-summer__item-label">child Under 11 Years Stay Free</span>
+                                                <span class="package-summer__item-label">Child Under 11 Years Stay Free</span>
                                             </li>
                                             <li class="package-summer__item">
                                                 <span class="package-summer__item-icon">
@@ -288,20 +320,20 @@
                                     <div class="package-summer__content">
                                         <ul class="package-summer__lists">
                                             <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
+                                                <div class="package-summer__item-icon">
                                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
                                                         </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">
+                                                </div>
+                                                <div class="package-summer__item-label">
                                                     Benefit from a special discounted CHILL’OUT OFFER at Grand Hilton Hotel.
                                                     <br>
                                                     <br>
                                                     <br>
                                                     <br>
                                                     * Valid until 30 April 2020
-                                                </span>
+                                                </div>
                                             </li>
                                         </ul>
                                         <ul class="package-summer__lists">
@@ -327,251 +359,250 @@
 
                     <!-- packkage summery details -->
                     <div class="package-summer__details">
-                        <div class="package-summer__sticky">
-                            <div class="grid">
-                                    <span class="package-summer__title">
-                                        <h3>Package Summery Details</h3>
-                                    </span>  
-                                    <div class="package-summer__details--sevices">
-                                        <ul class="package-summer__details--sevices-1">
-                                            <h3>Purchase Inclusions</h3>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Room as per selection</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Half Board or All Inclusive Meal Plan</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Complimentary Land & Water activities</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Child Under 11 years old stays free</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Free Wi-Fi</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Free Secure Parking</span>
-                                            </li>
-                                        </ul>
-                                        <ul class="package-summer__details--sevices-2">
-                                            <h3>Purchase Inclusions</h3>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Room as per selection</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Half Board or All Inclusive Meal Plan</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Complimentary Land & Water activities</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Child Under 11 years old stays free</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Free Wi-Fi</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Free Secure Parking</span>
-                                            </li>
-                                        </ul>
-                                        <ul class="package-summer__details--sevices-3">
-                                            <h3>Purchase Inclusions</h3>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Room as per selection</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Half Board or All Inclusive Meal Plan</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Complimentary Land & Water activities</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Child Under 11 years old stays free</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Free Wi-Fi</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Free Secure Parking</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="package-summer__details--line"></div>
-                                    <div class="package-summer__details--sevices package-summer__details--others">
-                                        <ul class="package-summer__details--sevices-4">
-                                            <h3>Meal Plan Available</h3>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Half Board</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">All Inclusive</span>
-                                            </li>
-                                        </ul>
+                    <div class="package-summer__sticky">
+                        <div class="grid">
+                                <span class="package-summer__title">
+                                    <h3>Package Summery Details</h3>
+                                </span>  
+                                <div class="package-summer__details--sevices">
+                                    <ul class="package-summer__details--sevices-1">
+                                        <h3>Purchase Inclusions</h3>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Room as per selection</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Half Board or All Inclusive Meal Plan</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Complimentary Land & Water activities</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Child Under 11 years old stays free</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Free Wi-Fi</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Free Secure Parking</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="package-summer__details--sevices-2">
+                                        <h3>Purchase Inclusions</h3>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Room as per selection</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Half Board or All Inclusive Meal Plan</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Complimentary Land & Water activities</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Child Under 11 years old stays free</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Free Wi-Fi</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Free Secure Parking</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="package-summer__details--sevices-3">
+                                        <h3>Purchase Inclusions</h3>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Room as per selection</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Half Board or All Inclusive Meal Plan</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Complimentary Land & Water activities</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Child Under 11 years old stays free</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Free Wi-Fi</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Free Secure Parking</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="package-summer__details--line"></div>
+                                <div class="package-summer__details--sevices package-summer__details--others">
+                                    <ul class="package-summer__details--sevices-4">
+                                        <h3>Meal Plan Available</h3>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Half Board</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">All Inclusive</span>
+                                        </li>
+                                    </ul>
 
-                                        <ul class="package-summer__details--sevices-5">
-                                            <h3>Entertainment</h3>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Live music</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">DJ & Mauritian Dance Show</span>
-                                            </li>
-                                        </ul>
-                                        <ul class="package-summer__details--sevices-6">
-                                            <h3>Check In & Check Out</h3>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Check In Time 14:00</span>
-                                            </li>
-                                            <li class="package-summer__item">
-                                                <span class="package-summer__item-icon">
-                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
-                                                        </svg>
-                                                </span>
-                                                <span class="package-summer__item-label">Check Out Time 11:00</span>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <ul class="package-summer__details--sevices-5">
+                                        <h3>Entertainment</h3>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Live music</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">DJ & Mauritian Dance Show</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="package-summer__details--sevices-6">
+                                        <h3>Check In & Check Out</h3>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Check In Time 14:00</span>
+                                        </li>
+                                        <li class="package-summer__item">
+                                            <span class="package-summer__item-icon">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.75 9C0.75 4.44365 4.44365 0.75 9 0.75C13.5563 0.75 17.25 4.44365 17.25 9C17.25 13.5563 13.5563 17.25 9 17.25C4.44365 17.25 0.75 13.5563 0.75 9Z" fill="#333333"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.983 6.03223C13.2759 6.32512 13.2759 6.79999 12.983 7.09289L8.32769 11.9679C8.0348 12.2608 7.55993 12.2608 7.26703 11.9679L5.01703 9.71789C4.72414 9.425 4.72414 8.95012 5.01703 8.65723C5.30993 8.36433 5.7848 8.36433 6.07769 8.65723L7.79736 10.3769L11.9224 6.03223C12.2153 5.73933 12.6901 5.73933 12.983 6.03223Z" fill="white"/>
+                                                    </svg>
+                                            </span>
+                                            <span class="package-summer__item-label">Check Out Time 11:00</span>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -583,16 +614,232 @@
         <!-- other package -->
         <div class="other-package">
             <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-3">
+                <h3>Other Packages</h3>
+                <div class="other-package-row">
+                    <div class="other-package__card-main">
+                        <div class="other-package__card-main--img" style="background-image: url(https://s3-alpha-sig.figma.com/img/6d11/1d35/4e67c75fe4699da25a33607a81bf7e72?Expires=1598832000&Signature=Q5mQXSeYQHd-0WebVEOlmhxXP7mlBxcwgWXv0hhdcPaxCfmz6ktjjgy0iGe6ku~OqmCvXIt5Q-X99kDc1L~~L5evB06bQv6PFGjWQXHKv3RoExTrmltcgrZXc9IxC6E7gXQWYxIL8W2trwSFCo-vW8p3jOD03HBWbtfM0vBLlTH3ZU3AX4kjQZ9B~gmhVr0EqEQ4JkD3Lo4wNmzgHRupB7o1v7E1clqeFF1e04fuB6tdnQEdqVMXSpFedBOng6N90rvvwDwgoigLk-FqLz3yXqa1Y0CWYpca9MwBW9dF4HaTBwbyZsIk~fDSUi6Hakbt1L2Z3aCT8n0FKdUk28RNsA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);"></div>
+                        <div class="other-package__card-main--content">
+                            <div class="other-package__card--star">
+                                <img src="./assets/svg/star.svg" alt="">
+                                <img src="./assets/svg/star.svg" alt="">
+                                <img src="./assets/svg/star.svg" alt="">
+                                <img src="./assets/svg/star.svg" alt="">
+                                <img src="./assets/svg/star.svg" alt="">
+                            </div>
+                            <b class="other-package__card--name">Hotel Blue Haven</b>
+                            <p class="other-package__card--introduce">
+                                Aute quis duis excepteur excepteur ipsum cat eiusmod consectetur enim laborum magna llit. 
+                                Ipsum est fugiat velit ea llamco do esse ut in veniam sun in onsequat. 
+                                Aute quis duis epteur excepteur ipsum occaecat eiusmod nsectetur enim laborum magna mollit. 
+                                Ipsum est fugiat velit ea ullamco do
+                            </p>
+                            <ul class="other-package__card--information-list">
+                                <li class="other-package__card--information-list-item">
+                                    <img src="./assets/svg/map-pin.svg" alt="">
+                                    1749 Wheeler Ridge  Delaware
+                                </li>
+                                <li class="other-package__card--information-list-item">
+                                    <img src="./assets/svg/user.svg" alt="">
+                                    2 x Guests
+                                </li>
+                                <li class="other-package__card--information-list-item">
+                                    <img src="./assets/svg/home.svg" alt="">
+                                    1 x Room
+                                </li>
+                            </ul>
+                            <div class="other-package__card--price-old">$ 10,500</div>
+                            <div class="other-package__card--price-new">$ 8,500</div>
+                            <button class="bth other-package__card--button">Book Now</button>
+                        </div>
 
                     </div>
+                    <div class="other-package__card">
+                        <div class="other-package__card--img" style="background-image: url(https://s3-alpha-sig.figma.com/img/97a7/9d1a/68c74b0571bbf58dc46203a9dbb16afa?Expires=1598832000&Signature=hAD28yW2Ln-2ee4LG4AjWZxNfzjvpMCaUYffVPgqizr6l6Knyrl4YmcLq4tnIi18qZBQCbtPCW16gplZFQsEyf74fbE7zBD5IJRB5UdBuGlFcMMNSYwofkryVkQrYFFCQGbZujNO86IQBejFKwdNbvqlKF9lNs0ALKlb-CAzN5iRs1-2E2j4R3sGHLscA86dQQkBcPSe8DkGAzcpoJzX3l6SHTfVoir4uG28E7IiS~nV7T8MbtFY2GG3Nx3qS2n1-X~pz1S1oXevGWutCOQ5JOIjT7OI35R~xpBIHc2eLEqxXj-UyVXbn-dd1DtIXgzLl~1SjMVCmDYDMuWxfNsddA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);"></div>
+                        <div class="other-package__card--content">
+                            <span class="other-package__card--star"></span>
+                            <div class="other-package__card--name"></div>
+                            <div class="other-package__card--introduce"></div>
+                            <div class="other-package__card--information"></div>
+                            <div class="other-package__card--price-old"></div>
+                            <div class="other-package__card--price-new"></div>
+                            <button class="bth other-package__card--button"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-package-row">
+                    <div class="other-package__card">
+                        <div class="other-package__card--img" style="background-image: url(https://s3-alpha-sig.figma.com/img/2f2f/41fc/a09d43f48e88b6bfacb2632901041501?Expires=1598832000&Signature=B4VJmYz71PyImrVqhzbIPGhxkI0CM50v8QBLm94EWrC0rtYstOFVXCKlgUZVtHFoj~Fuaxfq5B1nu9xaDOW~jabLGnghKknSeqzF3i3uYU5W4VSIn3iAAN0hhARMYvMq-Jb3wvL9zwiD5xQtRT84cDR4VSz6di0OROg0L1jZ4k2kCY1DtXKXzkz7NcZ1QJZqUXV0w1R7w9ko28-YxYmJlMdLJUr9LnS3TeoU2csT2D0YoZaBSD26FN3~51aHcPlAod28evYFeJhF8ExBOE0PKX9-L-6WXCNnK7TCpi73rgkPDVMgxKrO2gmlqV5UJOsHJSsH2vBd~HsGpBpogSmmLA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);"></div>
+                        <div class="other-package__card--content">
 
+                        </div>
+                    </div>
+                    <div class="other-package__card">
+                        <div class="other-package__card--img" style="background-image: url(https://s3-alpha-sig.figma.com/img/09b2/c682/d655bc4f88f94ba3b92c9d2873a9ecf9?Expires=1598832000&Signature=Pb4yYE9GEOlB2nDE~0zEylCFQBm8bKjebmAWxwDlOMjPMsFTzt~WRQyfRlghYlI~TqbF0Jq0HwXkOcvtl0btq8yzQpfgMXIT4vaD-pr1zYK~YdaYCkmPy7cQfhO9gew57Jrhgs0JnN-0ARL0FnKuLWnabHOebODJV2bBzyN3yLad2cO9bxhI1Mcmw~YdnVyN-WYzdGBJqJbVzbn7qqD4SKV0-qMNclZ3A4oZ78sv8MJJrocrrR66Xu-Ef8D98GxMmqoHCiiX8kJVR58tdBwu9cFrtk37zi6oTvoCj3G2ZkhuSbZ8AMVJwkTVCvKlWVuMQauz~NBP0I9f5tRia-mRjg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);"></div>
+                        <div class="other-package__card--content">
+
+                        </div>
+                    </div>
+                    <div class="other-package__card">
+                        <div class="other-package__card--img" style="background-image: url(https://s3-alpha-sig.figma.com/img/096b/bab9/d2b00dd1fc743796cbf6b959a6347d51?Expires=1598832000&Signature=GMnmfDMMRoNq43WA~lgE~xiiQSwSVI8pvF8nkkeB1OR0t~FSh3fRLP~ruI0BX-W6Z8pCi-iKctotfkJqwbARFdw4i-Xj~xNeli4nQhzKHvziIWuJCrbsq183VfUtXIzP0~eRxaBOKi8yrB0av27hdRObUdf2TFmek9iUXHKjD3r3i~xSLPPjgRfmGSA0dIMPR86PiEvzHge57T0Zxu~ygfn8~n5ajR8yANt3drD3maYYc8Dh9VHjL8w6qlyvp7j3bB77wXE93vt2mX~5UVQw4voPqKdB4e8rupiRnM9acrf20LCjMRSUoY9uBQN6OE0O8Fns80zp2ztpKrJf3OdmaA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);"></div>
+                        <div class="other-package__card--content">
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-    </div>
+        <!-- guest review -->
+        <div class="guest-review">
+            <div class="grid">
+                <div class="guest-review__container">
+                    <h3>What people thinks about us</h3>
+                    <div class="guest-review_arrow">
+                        <img src="./assets/svg/arow-left.svg" alt="">
+                        <img src="./assets/svg/arow-right.svg" alt="">
+                    </div>
+                    <div class="guest-review__content">
+                        <div class="guest-review__content-profile--img" style="background-image: url(https://s3-alpha-sig.figma.com/img/900d/5e93/52b690406aa5d4b499fa8dd65b33a031?Expires=1598832000&Signature=BC9jkxHljRGSnZRFz0Qz28rSYUphBGgDwSuo88c9nRklE2jRG4h8DDEz5UHFYyi8ymLBWT-tVBsG84ur-x1is-jxrH2PerQF5h8v31Ee1-gHjUa7RZQqUbHuJg-SFcscDI45WkCXJ0Vzx59K2sgZJ0qC4IdB0KDqFop9cwL5uZBAdfP8cMKv8hBZdWNdDktExWcNMaSd3hUoCNzVd9Y0Hvkx0fOOgnZMtN43q6aQ9rxSp-FnuhQWKtqTNnQAOyqtVbTStvNWm3fZ2PXErvA8znncS-tXmzAF92XqPOx74FhM0YgfZp2X39LL1oWYkQr4zHougMnn55NFqX5Bfarb0w__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);"></div>
+                        <div class="guest-review__content-profile">
+                            <div class="guest-review__content-profile--name">Megan Fox</div>
+                            <div class="guest-review__content-profile--date">Stayed 18 Nov, 2019</div>
+                            <div class="guest-review__content-profile--star">
+                                <img src="./assets/svg/star.svg" alt="">
+                                <img src="./assets/svg/star.svg" alt="">
+                                <img src="./assets/svg/star.svg" alt="">
+                                <img src="./assets/svg/star.svg" alt="">
+                                <img src="./assets/svg/star.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="guest-review__content-icon">
+                            <img src="./assets/svg/icon-paragraph-1.svg" alt="" class="guest-review__content-icon-open">
+                            <img src="./assets/svg/icon-paragraph-2.svg" alt="" class="guest-review__content-icon-close">
+                        </div>
+                        <div class="guest-review__content-paragraphs">
+                            <p>It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- newsletter -->
+        <div class="newsletter-container">
+            <div class="newsletter-container__title">   
+                <span>subscribe to our</span>
+                <h3>Newsletter</h3>
+            </div>
+            <div class="newsletter-container__subcribe">
+                <input type="text" class="newsletter-container__subcribe--input" placeholder="Your email address">
+                <button class="bth newsletter-container__subcribe--button">Send</button>
+            </div>
+        </div>
+
+        <!-- other activities -->
+        <div class="other-activities">
+            <div class="grid">
+                <h3>Other Activities</h3>
+                <ul class="other-activities-list">
+                    <li class="other-activities-item" style="background-image: linear-gradient(180deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%),
+                    url(/ha-htmlcss/assets/img/chamarel.jpg);">
+                        <div class="other-activities-item__title">The curious corner of chamarel</div>
+                        <button class="bth other-activities-item__button">Book Now</button>
+                    </li>
+                    <li class="other-activities-item" style="background-image: linear-gradient(180deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%),
+                    url(/ha-htmlcss/assets/img/golf-club.jpg);">
+                        <div class="other-activities-item__title">The curious corner of chamarel</div>
+                        <button class="bth other-activities-item__button">Book Now</button>
+                    </li>
+                    <li class="other-activities-item" style="background-image: linear-gradient(180deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%),
+                    url(/ha-htmlcss/assets/img/hilking-trip.jpg);">
+                        <div class="other-activities-item__title">The curious corner of chamarel</div>
+                        <button class="bth other-activities-item__button">Book Now</button>
+                    </li>
+                    <li class="other-activities-item" style="background-image: linear-gradient(180deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%),
+                    url(/ha-htmlcss/assets/img/quest-blue.jpg);">
+                        <div class="other-activities-item__title">The curious corner of chamarel</div>
+                        <button class="bth other-activities-item__button">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="grid">
+                <div class="footer__top">
+                    <div>
+                        <img src="./assets/svg/Best tour plan-logo-footer.svg" alt="" class="footer__top-part--logo">
+                    </div>
+                    <div class="footer__top-part">
+                        <ul class="footer__top-part--list">
+                            <li class="footer__top-part--item">All catelogies</li>
+                            <li class="footer__top-part--item">All Deals</li>s
+                            <li class="footer__top-part--item">Hotel</li>
+                            <li class="footer__top-part--item">Activities</li>
+                            <li class="footer__top-part--item">Spa Packages</li>
+                            <li class="footer__top-part--item">Hotel Day Packages</li>
+                            <li class="footer__top-part--item">Restaurance</li>
+                            <li class="footer__top-part--item">Fitness</li>
+                            <li class="footer__top-part--item">Rodrigues</li>
+                        </ul>
+                    </div>
+                    <div class="footer__top-part footer__top-part--social">
+                        <ul class="footer__top-part--list">
+                            <li class="footer__top-part--item">Additional Information</li>
+                            <li class="footer__top-part--item">About Us</li>
+                            <li class="footer__top-part--item">contract Us</li>
+                            <li class="footer__top-part--item">How does it work?</li>
+                            <li class="footer__top-part--item">Frequently Asked Questions</li>
+                            <li class="footer__top-part--item">Deals.mu loyalty program</li>
+                            <li class="footer__top-part--item">Promote your Business on BTP</li>
+                        </ul>
+                        <div class="social-Network">
+                            <div class="social-Network__title">Social Network</div>
+                            <div class="social-Network__icon">
+                                <div class="social-Network__icon-facebook">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.001 2.00195C6.47895 2.00195 2.00195 6.47895 2.00195 12.001C2.00195 16.991 5.65795 21.127 10.439 21.88V14.892H7.89895V12.001H10.439V9.79795C10.439 7.28995 11.932 5.90695 14.215 5.90695C15.309 5.90695 16.455 6.10195 16.455 6.10195V8.56095H15.191C13.951 8.56095 13.563 9.33295 13.563 10.124V11.999H16.334L15.891 14.89H13.563V21.878C18.344 21.129 22 16.992 22 12.001C22 6.47895 17.523 2.00195 12.001 2.00195Z" fill="#BDBDBD"/>
+                                    </svg>
+                                </div>
+                                <div class="social-Network__icon-youtube">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1831 10.3246L9.82477 9.22417C9.61897 9.12862 9.44992 9.23572 9.44992 9.46357V11.5363C9.44992 11.7641 9.61897 11.8712 9.82477 11.7757L12.182 10.6753C12.3889 10.5787 12.3889 10.4212 12.1831 10.3246ZM10.4999 0.419922C4.93282 0.419922 0.419922 4.93282 0.419922 10.4999C0.419922 16.067 4.93282 20.5799 10.4999 20.5799C16.067 20.5799 20.5799 16.067 20.5799 10.4999C20.5799 4.93282 16.067 0.419922 10.4999 0.419922ZM10.4999 14.5949C5.34022 14.5949 5.24992 14.1298 5.24992 10.4999C5.24992 6.87007 5.34022 6.40492 10.4999 6.40492C15.6596 6.40492 15.7499 6.87007 15.7499 10.4999C15.7499 14.1298 15.6596 14.5949 10.4999 14.5949Z" fill="#BDBDBD"/>
+                                    </svg>
+                                </div>
+                                <div class="social-Network__icon-instagram">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 20C8.64583 20 7.35026 19.7363 6.11328 19.209C4.8763 18.6816 3.81185 17.972 2.91992 17.0801C2.02799 16.1882 1.31836 15.1237 0.791016 13.8867C0.263672 12.6497 0 11.3542 0 10C0 8.64583 0.263672 7.35026 0.791016 6.11328C1.31836 4.8763 2.02799 3.81185 2.91992 2.91992C3.81185 2.02799 4.8763 1.31836 6.11328 0.791016C7.35026 0.263672 8.64583 0 10 0C11.3542 0 12.6497 0.263672 13.8867 0.791016C15.1237 1.31836 16.1882 2.02799 17.0801 2.91992C17.972 3.81185 18.6816 4.8763 19.209 6.11328C19.7363 7.35026 20 8.64583 20 10C20 11.3542 19.7363 12.6497 19.209 13.8867C18.6816 15.1237 17.972 16.1882 17.0801 17.0801C16.1882 17.972 15.1237 18.6816 13.8867 19.209C12.6497 19.7363 11.3542 20 10 20ZM15 6.25C15 5.91146 14.8796 5.61849 14.6387 5.37109C14.3978 5.1237 14.1016 5 13.75 5H6.25C5.91146 5 5.61849 5.1237 5.37109 5.37109C5.1237 5.61849 5 5.91146 5 6.25V7.5H7.22656C7.98177 6.66667 8.90625 6.25 10 6.25C11.0938 6.25 12.0182 6.66667 12.7734 7.5H15V6.25ZM7.5 10C7.5 10.6901 7.74414 11.2793 8.23242 11.7676C8.7207 12.2559 9.3099 12.5 10 12.5C10.6901 12.5 11.2793 12.2559 11.7676 11.7676C12.2559 11.2793 12.5 10.6901 12.5 10C12.5 9.3099 12.2559 8.7207 11.7676 8.23242C11.2793 7.74414 10.6901 7.5 10 7.5C9.3099 7.5 8.7207 7.74414 8.23242 8.23242C7.74414 8.7207 7.5 9.3099 7.5 10ZM15 8.75H13.5156C13.6719 9.17969 13.75 9.59635 13.75 10C13.75 11.0417 13.3854 11.9271 12.6562 12.6562C11.9271 13.3854 11.0417 13.75 10 13.75C8.95833 13.75 8.07292 13.3854 7.34375 12.6562C6.61458 11.9271 6.25 11.0417 6.25 10C6.25 9.59635 6.32812 9.17969 6.48438 8.75H5V13.75C5 14.1016 5.12044 14.3978 5.36133 14.6387C5.60221 14.8796 5.89844 15 6.25 15H13.75C14.1016 15 14.3978 14.8796 14.6387 14.6387C14.8796 14.3978 15 14.1016 15 13.75V8.75Z" fill="#BDBDBD"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__top-part">
+                        <ul class="footer__top-part--list">
+                            <li class="footer__top-part--item">Legal Information</li>
+                            <li class="footer__top-part--item">Terms & Conditions</li>
+                            <li class="footer__top-part--item">Disclaimer</li>
+                            <li class="footer__top-part--item">Cancellation policy</li>
+                            <li class="footer__top-part--item">Privacy</li>
+                        </ul>
+                    </div>
     
+                </div>
+                <div class="footer__contract">
+    
+                </div>
+                <div class="footer__bottom">
+    
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
 </body>
 </html>
